@@ -6,5 +6,9 @@ namespace FriskyElephant.Cards {
   public class DamageEffect : Effect {
     [SerializeField]
     private int DamageAmount;
+
+    public override string ToString() {
+      return $"Deal {DamageAmount} Damage";
+    }
   }
 }

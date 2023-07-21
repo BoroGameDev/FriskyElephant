@@ -6,6 +6,10 @@ namespace FriskyElephant.Cards {
   public class BlockEffect : Effect {
     [SerializeField]
     private int BlockAmount;
+
+    public override string ToString() {
+      return $"Gain {BlockAmount} Block";
+    }
   }
 }
 

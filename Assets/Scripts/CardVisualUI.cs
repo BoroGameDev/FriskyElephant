@@ -1,20 +1,21 @@
 using FriskyElephant.Cards;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
-public class CardVisual : MonoBehaviour {
+public class CardVisualUI : MonoBehaviour {
   // Eventually CardData will come from `Init` function not Editor
   [SerializeField]
   private Card CardData;
 
   [SerializeField]
-  private SpriteRenderer CardArtRenderer;
+  private Image CardArtRenderer;
   [SerializeField]
-  private TextMeshPro CardName;
+  private TextMeshProUGUI CardName;
   [SerializeField]
-  private TextMeshPro CardDescription;
+  private TextMeshProUGUI CardDescription;
   [SerializeField]
-  private TextMeshPro CardCost;
+  private TextMeshProUGUI CardCost;
 
   public void Init(Card data) {
     this.SetCard(data);
